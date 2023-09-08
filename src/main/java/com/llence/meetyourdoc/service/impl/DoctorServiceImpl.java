@@ -1,9 +1,9 @@
-package com.llence.dbdemo.service.impl;
+package com.llence.meetyourdoc.service.impl;
 
-import com.llence.dbdemo.exception.ResourceNotFoundException;
-import com.llence.dbdemo.model.Doctor;
-import com.llence.dbdemo.repository.DoctorRepository;
-import com.llence.dbdemo.service.DoctorService;
+import com.llence.meetyourdoc.exception.ResourceNotFoundException;
+import com.llence.meetyourdoc.model.Doctor;
+import com.llence.meetyourdoc.repository.DoctorRepository;
+import com.llence.meetyourdoc.service.DoctorService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

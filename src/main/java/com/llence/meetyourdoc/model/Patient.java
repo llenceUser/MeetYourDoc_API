@@ -1,20 +1,20 @@
-package com.llence.dbdemo.model;
+package com.llence.meetyourdoc.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "doctor")
-public class Doctor {
+@Table(name = "patient")
+public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
-    @Column(name = "first_Name")
+    @Column(name = "first_Name", nullable = false)
     private String firstName;
 
-    @Column(name = "last_Name")
+    @Column(name = "last_Name", nullable = false)
     private String lastName;
 
     @Column(name = "email")
@@ -23,7 +23,6 @@ public class Doctor {
     @Column(name = "address")
     private String address;
 
-    @Column(name = "phone_No")
+    @Column(name = "phone_No", nullable = false)
     private int phoneNo;
-
 }

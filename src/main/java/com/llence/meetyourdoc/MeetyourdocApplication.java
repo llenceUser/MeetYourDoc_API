@@ -1,4 +1,4 @@
-package com.llence.dbdemo;
+package com.llence.meetyourdoc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

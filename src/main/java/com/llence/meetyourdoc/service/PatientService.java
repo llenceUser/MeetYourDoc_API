@@ -1,6 +1,6 @@
-package com.llence.dbdemo.service;
+package com.llence.meetyourdoc.service;
 
-import com.llence.dbdemo.model.Patient;
+import com.llence.meetyourdoc.model.Patient;
 
 import java.util.List;
 

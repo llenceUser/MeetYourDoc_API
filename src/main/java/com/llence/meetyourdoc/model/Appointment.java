@@ -1,4 +1,4 @@
-package com.llence.dbdemo.model;
+package com.llence.meetyourdoc.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

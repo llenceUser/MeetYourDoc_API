@@ -1,6 +1,6 @@
-package com.llence.dbdemo.controller;
+package com.llence.meetyourdoc.controller;
 
-import com.llence.dbdemo.service.AppointmentService;
+import com.llence.meetyourdoc.service.AppointmentService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

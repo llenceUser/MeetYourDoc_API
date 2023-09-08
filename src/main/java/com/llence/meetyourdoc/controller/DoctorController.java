@@ -1,7 +1,7 @@
-package com.llence.dbdemo.controller;
+package com.llence.meetyourdoc.controller;
 
-import com.llence.dbdemo.model.Doctor;
-import com.llence.dbdemo.service.DoctorService;
+import com.llence.meetyourdoc.model.Doctor;
+import com.llence.meetyourdoc.service.DoctorService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

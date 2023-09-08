@@ -1,6 +1,6 @@
-package com.llence.dbdemo.repository;
+package com.llence.meetyourdoc.repository;
 
-import com.llence.dbdemo.model.Doctor;
+import com.llence.meetyourdoc.model.Doctor;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface DoctorRepository extends JpaRepository<Doctor, Long> {
