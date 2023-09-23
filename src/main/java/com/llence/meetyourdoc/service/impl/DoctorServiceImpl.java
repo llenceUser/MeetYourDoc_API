@@ -6,6 +6,7 @@ import com.llence.meetyourdoc.repository.DoctorRepository;
 import com.llence.meetyourdoc.service.DoctorService;
 import org.springframework.stereotype.Service;
 
+import javax.print.Doc;
 import java.util.List;
 
 @Service
@@ -41,6 +42,8 @@ public class DoctorServiceImpl implements DoctorService {
         existingDoctor.setEmail(doctor.getEmail());
         existingDoctor.setAddress(doctor.getAddress());
         existingDoctor.setPhoneNo(doctor.getPhoneNo());
+        existingDoctor.setSpecialization(doctor.getSpecialization());
+        existingDoctor.setRole(doctor.getRole());
         doctorRepository.save(existingDoctor);
         return existingDoctor;
     }

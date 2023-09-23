@@ -1,7 +1,7 @@
 package com.llence.meetyourdoc.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -10,9 +10,13 @@ import java.util.Collection;
 import java.util.List;
 
 @Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "doctor")
 public class Doctor implements UserDetails {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -34,11 +38,11 @@ public class Doctor implements UserDetails {
 
     private String password;
 
-    @Column(name = "specialization", nullable = false)
-    private String specialization;
-
     @Enumerated(EnumType.STRING)
     private Role role;
+
+    @Column(name = "specialization", nullable = false)
+    private String specialization;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
